@@ -45,7 +45,7 @@
 	height:300px;
 	width:300px;
 	position:absolute;
-	left:43%;
+	left:calc(50% - 150px);
 	margin-top: -50px;
 }
 .nav_container
@@ -201,7 +201,7 @@
 {
     position:fixed;
 		z-index: -2;
-    left:50%;
+    left:calc(50% - 25px);
     bottom:0;
     margin-top:-25px;
     margin-left:-25px;
