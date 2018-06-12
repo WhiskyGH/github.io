@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<!--//HEADER html//---------------------------------------------------------->
+	<head>
+		<title>Porsche</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="icon" type="image/png" href="img/favicon.ico">
+	</head>
+
+	<!--//BODY//----------------------------------------------------------------->
+	<body>
+
+		<!--//DEFACE PAGE//-------------------------------------------------------->
+		<div id="getback">
+			<a href="index.html">
+				<img class="deface" src="img/illu.jpg">
+				<span class="deface_font">
+					<h1>
+						No! click to return
+						Hint: have a look at the scripts.js file
+					</h1>
+				</span>
+			</a>
+		</div>
+
+		<!--CONTAINS EVERYTHING WHAT YOU SEE AFTER RETURNING-->
+		<div id="wrapper_div">
+
+		<!--//HEADER//------------------------------------------------------------->
+		<div class="header_container">
+			<!--LOGO-->
+			<div id="home" class="logo_div">
+				<a href="index.html"><img class="logo_img" src="img/logo.png" alt="Logo"></a>
+			</div>
+			<!--menu-->
+			<div class="nav_container">
+				<nav class="main_nav">
+					<ul class="main_ul">
+						<li><a class="menu_font home" href="#home">Home</a></li>
+						<li><a class="menu_font about_us" href="#company_jump">Company</a></li>
+						<li><a class="menu_font login" href="#login_jump">Login</a></li>
+						<li><a class="menu_font contact" href="#contact_jump">Contact</a></li>
+						<li><a id="extra_point" class="menu_font" href="#extra_jump">Extra</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--progress bar-->
+			<div class="progress_container">
+				<div class="progress_div">
+					<div id="myBar"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--//1. PAGE//------------------------------------------------------------>
+		<div class="page_one">
+			<!--MAIN IMAGE 01-->
+			<div class="image_01_div">
+				<div class="image_01"></div>
+			</div>
+			<!--INVISIBLE SPACE AS FILLER-->
+			<div class="main_unvisible_space"></div>
+			<!--ONLY 4 JUMP-->
+			<div id="company_jump"></div>
+			<!--DOCK FOR STICK TO ATTACH THE 2. PAGE ON TOP-->
+			<div id="sticky-anchor"></div>
+			<!--MAIN IMAGE 02-->
+			<div class="image_02_div" id="sticky">
+				<div class="image_02">
+					<div id="title_02_div">
+						<p id="title_01">POWER</p>
+					</div>
+				</div>
+			</div>
+			<!--DOCK FOR STICK TO ATTACH THE 2. PAGE ON TOP-->
+			<div id="sticky-anchor"></div>
+		</div>
+		<!--BOUNCING ARROW-->
+		<div class="bounce"></div>
+
+		<!--//2. PAGE//------------------------------------------------------------>
+		<div class="page_two">
+		</div>
+
+		<!--//3. PAGE//------------------------------------------------------------>
+		<div class="page_three">
+			<!--MAIN IMAGE 03-->
+			<div class="image_03_div">
+				<div class="image_03">
+					<div class="title_02_div">
+						<p id="title_02">STYLE</p>
+						<div id="ifAjd6xa6Kc" class="playlist_video_01_div">
+							<div class="playlist_video_01"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--LOGIN-->
+		<div id="login_form" class="third_page login_page_div">
+			<div class="login_title">Login</div>
+			<div class="user_input">
+				<input type="text" placeholder="user" id="login_name_user"><br />
+			</div>
+			<div class="password_input">
+				<input type="text" placeholder="password" id="login_name_text"><br />
+			</div>
+			<div class="login_confirm">
+				<input type="button" id="login_button" value="Login">
+			</div>
+		</div>
+
+		<!--PARALLAX EFFECT SITE 2-->
+		<div class="effect_site_2" id="login_jump"></div>
+
+		<!--//4. PAGE//-->
+		<div id="page_four" class="page_four">
+			<div id="extra_jump" class="image_04_div">
+				<div class="image_04">
+
+					<!--VIDEO PLAYER-->
+					<!--PLAYLISTTITLE-->
+					<div class="playlist_title">Extra</div>
+					<!--VIDEO PLAYER-->
+					<div class="video_player">
+						<!--MAIN VIDEO-->
+						<div class="main_video_div">
+							<div class="iframe_div">
+								<iframe id="replace_me" src="https://www.youtube.com/embed/ihhFf-9wLHs?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<!--PLAYLIST-->
+						<div class="playlist_div">
+							<p class="playlist_header">The new Porsche</p>
+							<!--thumbnail 01-->
+							<div class="playlist_video_div video_button" id="ihhFf-9wLHs">
+								<img class="playlist_video" src="img/thumbnail_01.jpg">
+							</div>
+							<!--thumbnail 02-->
+							<div class="playlist_video_div video_button" id="PemPidqObJ4">
+									<img class="playlist_video" src="img/thumbnail_02.jpg">
+							</div>
+							<!--thumbnail 03-->
+							<div class="playlist_video_div video_button" id="VSj9lQKH9wQ">
+								<img class="playlist_video" src="img/thumbnail_03.jpg">
+							</div>
+							<!--thumbnail 03-->
+							<div class="playlist_video_div video_button" id="fJQ4hQSusjE">
+								<img class="playlist_video" src="img/thumbnail_04.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--//FOOTER//----------------------------------------------------------->
+		<div class="footer_container">
+			<!--FOOTER DESIGN-->
+			<div class="footer_design">
+			</div>
+			<!--FOOTER CONTAINER-->
+			<div class="footer_container">
+				<!--FOOTER PART LEFT (NEWSLETTER)-->
+				<div class="footer_part_left">
+					<div class="newsletter_container">
+						<div class="yourmail_div">
+							<input id="email" class="newsletter_input" type="text" placeholder="NAME@EMAIL.COM" name="email" required>
+						</div>
+						<div class="subscribe_div">
+							<button class="newsletter_btn" type="button" id="button">Subscribe</button>
+						</div>
+					</div>
+				</div>
+				<!--FOOTER PART MIDDLE (LINK)-->
+				<div class="footer_part_middle">
+					<div id="company_link">
+						<a id="contact_jump" class="porsche_com" href="https://www.porsche.com/">Porsche.com</a>
+					</div>
+				</div>
+				<!--FOOTER PART RIGHT (CLOCK)-->
+				<div class="footer_part_right">
+					<div class="table_div">
+						<table class="countdownContainer">
+							<tr class="info">
+								<td colspan="4">Neues Auto in:</td>
+							</tr>
+							<tr class="info">
+								<td id="days">378</td>
+								<td id="hours">5</td>
+								<td id="minutes">7</td>
+								<td id="seconds">50</td>
+							</tr>
+							<tr>
+								<td>Tagen</td>
+								<td>Stunden</td>
+								<td>Minuten</td>
+								<td>Sekunden</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</diV>
+
+	<!--//SCRIPTS//---------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<noscript>
+		Bitte aktivieren Sie JavaScript um den vollen Umfang dieser genialen Website zu erfahren!
+	</noscript>
+
+	</body>
+</html>
