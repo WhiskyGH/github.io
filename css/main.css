@@ -34,7 +34,7 @@
 	top:200px;
 	position:absolute;
 }
-#extra_point
+#gallery
 {
 	top:250px;
 	position:absolute;
@@ -163,12 +163,31 @@
 	height: 1080px;
 	width: 100%;
 }
-.image_04
+.image_04_bg
 {
 	height: 100%;
 	width: 100%;
-	background-image: url("../img/image_04.jpg");
+	background-image: url("../img/bg.png");
 	z-index:200;
+}
+.image_04
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/image_04_v3.png");
+	z-index:300 !important;
+}
+.centered
+{
+	position: absolute;
+	left: calc(50% - 680px);
+	font-size: 200px;
+	color:white;
+	overflow: hidden;
+	z-index: 250;
+	line-height: 0.6;
+
 }
 .main_unvisible_space
 {
@@ -321,7 +340,7 @@
 	transition: background-color 0.4s;
 	cursor:pointer;
 }
-#title_02_div
+/*#title_02_div
 {
 	width:1000px;
 	height:250px;
@@ -331,6 +350,12 @@
 	display: table;
 	background-color:white;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}*/
+#title_02_div
+{
+	display: table;
+	width:100%;
+	height: 1080px;
 }
 .title_02_div
 {
@@ -340,42 +365,10 @@
 	margin-left: 460px;
 	margin-top: 415px;
 	display: table;
-	background-color:white;
+	color: black;
+	mix-blend-mode: screen;
+	background-color: rgba(244, 220, 211, 1);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.video_player
-{
-	width:1020px;
-	height:432px;
-	position: absolute;
-	margin-left: 460px;
-	padding:10px;
-	margin-top:240px;
-	display: table;
-	background-color:white;
-	z-index: 999;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.playlist_title
-{
-	width:200px;
-	position: absolute;
-	margin-left: 460px;
-	margin-top:160px;
-	display: table;
-	background-color:white;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	font-size: 40px;
-	padding: 0 20px 0 20px;
-	color:#3d5c3c;
-}
-#title_01
-{
-	font-size: 90px;
-	text-align:center;
-	display: table-cell;
-	vertical-align: middle;
-	color:#3d5c3c;
 }
 #title_02
 {
@@ -383,8 +376,44 @@
 	text-align:center;
 	display: table-cell;
 	vertical-align: middle;
-	color:#3d5c3c;
 }
+.player_icon_div
+{
+	display: block;
+	height:150px;
+	width:150px;
+	position: absolute;
+	top:calc(50% - 75px);
+	left:calc(50% - 75px);
+}
+.player_icon
+{
+	width: 100%;
+	height: 100%;
+}
+.video_player
+{
+	background-color: red;
+	height:585px;
+	width:1040px;
+	position: absolute;
+	bottom:calc(50% - 292px);
+	left:calc(50% - 520px);
+}
+.iframe_size
+{
+	height:100%;
+	width:100%;
+}
+#title_01
+{
+	font-size: 300px;
+	text-align:center;
+	display: table-cell;
+	vertical-align: middle;
+	color:white;
+}
+
 
 
 .main_video_div
@@ -486,23 +515,28 @@
 }
 .porsche_com
 {
+	vertical-align: middle;
 	color:white;
 	font-size: 25px;
 	text-decoration: underline;
-	display: inline-block;
-	text-align: center;
 }
 .porsche_com:hover
 {
 	color:#c29049;
 }
+#company_link
+{
+	height: 50px;
+	width:50%;
+	margin-top: 25px;
+	margin-left: calc(50% - 148px);
+}
 .newsletter_container
 {
 	height:50px;
 	width:60%;
-	top:25%;
-	left:50%;
-	position: relative;
+	float:right;
+	margin-top:25px;
 }
 .yourmail_div
 {
@@ -557,17 +591,30 @@
 	cursor: pointer;
 	border:2px solid white;
 }
-#company_link
-{
-	position: relative;
-	height: 30px;
-	width:50%;
-	left:38%;
-	top:34%;
-}
 #email
 {
 	cursor:text;
+}
+.wrapper {
+  width: 400px;
+	height:50px;
+	margin-left: -50px;
+}
+.wrapper ul {
+  list-style: none;
+}
+.wrapper ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 75px;
+  margin: 0 10px;
+  cursor: pointer;
+  float: left;
+  transition: all 0.5s ease;
+}
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: -10px;
 }
 
 

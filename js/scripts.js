@@ -91,9 +91,16 @@ function password(){
 //Right login-----------------------------------------------------------------//
 function rightlogin(){
     var login = $("#page_four");
-    var extra_point = $("#extra_point");
+    var extra_point = $("#gallery");
+    var contact_point = $("#contact")
+
     login.css('display', 'block');
     extra_point.css('display', 'block');
+    extra_point.css('top', '200px');
+    contact_point.css('top', '250px');
+    page_four.scrollIntoView({
+      behavior:"smooth"
+    });
 };
 
 //Wrong login-----------------------------------------------------------------//
@@ -130,14 +137,6 @@ jQuery(document).ready(function(){
   });
 });
 
-/*jQuery(document).ready(function(){
-  jQuery(document).on('click', '.video_button', function(){
-    var link = jQuery(this).attr('id');
-    //jQuery('.' + link).html('<iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/' + link + '?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-      jQuery('#replace_me').replaceWith('<iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/' + link + '?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-    //alert('test');
-  });
-});*/
 
 
 
@@ -157,52 +156,13 @@ jQuery(document).ready(function(){
 		}
 	});
 
-//timer-----------------------------------------------------------------------//
-function countdown(){
-  var now = new Date();
-  var eventDate = new Date(2018, 06, 25);
-
-  var currentTiime = now.getTime();
-  var eventTime = eventDate.getTime();
-
-  var remTime = eventTime - currentTiime;
-
-  var s = Math.floor(remTime / 1000);
-  var m = Math.floor(s / 60);
-  var h = Math.floor(m / 60);
-  var d = Math.floor(h / 24);
-
-  h %= 24;
-  m %= 60;
-  s %= 60;
-
-  h = (h < 10) ? "0" + h : h;
-  m = (m < 10) ? "0" + m : m;
-  s = (s < 10) ? "0" + s : s;
-
-  document.getElementById("days").textContent = d;
-  document.getElementById("days").innerText = d;
-
-  document.getElementById("hours").textContent = h;
-  document.getElementById("minutes").textContent = m;
-  document.getElementById("seconds").textContent = s;
-
-  setTimeout(countdown, 1000);
-}
-
-countdown();
-
-
-
 
 //JS IM ALLGEMEINEN--------------------------------------------------ALLGEMEIN//
 //Smooth jumps (hyperlinks)
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
       &&
@@ -232,3 +192,18 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
+$(document).on("click", ".player_icon_div", function(){
+  yt_video();
+});
+
+
+function yt_video(){
+    var extra_point = $('.video_player');
+    var hide_icon = $('.player_icon_div');
+
+    extra_point.css('display', 'block');
+    hide_icon.css('display', 'none');
+};
